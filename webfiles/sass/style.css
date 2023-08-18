@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&family=Montserrat:ital,wght@0,100;0,200;1,100&family=Roboto:ital,wght@0,100;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: SourceSansFont;
+  src: url("./font/SourceSansPro-Regular.otf") format("opentype");
+}
+header {
+  background-color: #61A8BC;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  padding: 1.25rem 5rem;
+  margin: auto;
+  background-color: #61A8BC;
+  align-items: center;
+}
+header nav #logo {
+  width: 191px;
+  height: 145px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav li {
+  list-style: none;
+}
+header nav li a {
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  display: block;
+  font-family: SourceSansFont;
+  font-size: 1.5rem;
+}
+header nav li a:hover {
+  color: #660000;
+  text-decoration: underline;
+  font-size: 2rem;
+  transition: all 0.5s;
+}
+header nav li #red {
+  color: #660000;
+}
+header section {
+  padding-top: 3.125rem;
+  max-width: 1400px;
+  margin: auto;
+}
+header section .content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+header section .content .lftContainer {
+  display: flex;
+  padding: 0 0 8.063rem 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 0 0;
+  max-width: 900px;
+  align-self: stretch;
+  z-index: 9999;
+}
+header section .content .lftContainer h1 {
+  font-family: "Merriweather", serif;
+  font-size: 4rem;
+  color: white;
+}
+header section .content .lftContainer p {
+  font-family: SourceSansFont;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.875rem 0;
+}
+header section .content img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+main #secondSection {
+  background: linear-gradient(180deg, #660000 33.33%, #3B0000 100%);
+}
+main #secondSection div {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 11.563rem 5rem;
+}
+main #secondSection div img {
+  width: 243px;
+  height: 185px;
+}
+main #secondSection div h2 {
+  font-family: SourceSansFont;
+  font-size: 4rem;
+  color: white;
+  padding: 1.875rem 0;
+}
+main #secondSection div p {
+  color: white;
+  font-family: SourceSansFont;
+  font-size: 1.5rem;
+}
+main #thirdSection h2 {
+  text-align: center;
+  font-family: SourceSansPro;
+  font-size: 4.063rem;
+  padding: 1.875rem 0;
+}
+main #thirdSection .img {
+  max-width: 1400px;
+  display: flex;
+  margin: auto;
+  height: 540px;
+  position: relative;
+}
+main #thirdSection .img .bubble {
+  position: absolute;
+  border-radius: 220px;
+  padding: 5.938rem 0.125rem;
+  width: 220px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: SourceSansPro;
+  text-transform: uppercase;
+}
+main #thirdSection .img #bubble1 {
+  background-color: rgba(102, 0, 0, 0.75);
+  left: 23%;
+  top: 3%;
+  color: white;
+}
+main #thirdSection .img #bubble2 {
+  background-color: rgba(255, 255, 255, 0.75);
+  left: 32%;
+  top: 28%;
+  color: #3B0000;
+}
+main #thirdSection .img #bubble3 {
+  background-color: rgba(104, 161, 177, 0.75);
+  right: 22%;
+  top: 30%;
+  color: white;
+}
+main #thirdSection .img #bubble4 {
+  background-color: white;
+  right: 32%;
+  bottom: 3%;
+  color: #61A8BC;
+}
+main #thirdSection .img .img1,
+main #thirdSection .img .img4 {
+  width: 35%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+main #thirdSection .img .img2,
+main #thirdSection .img .img3 {
+  width: 65%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+footer {
+  background-color: #61A8BC;
+}
+footer section {
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+  padding: 2.5rem 5rem 0 5rem;
+  justify-content: space-between;
+}
+footer section .lCG p {
+  font-family: SourceSansPro;
+  color: white;
+}
+footer section .lCG .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.68rem;
+}
+footer section .lCG .info #space {
+  padding-left: 5rem;
+}
+footer section .lCG .info h3 {
+  font-size: 1.5rem;
+  font-family: SourceSansPro;
+  color: white;
+}
+footer section .lCG .info .firstPF {
+  padding: 0.625rem 0;
+}
+footer section .lCG .info p {
+  font-size: 1.5rem;
+}
+footer section #creator {
+  font-size: 1.125rem;
+}
+footer section .newsletter {
+  background-color: white;
+}
+footer section .newsletter .nLC {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 540px;
+}
+footer section .newsletter .nLC p {
+  font-size: 1.5rem;
+  color: #3B0000;
+  font-family: SourceSansPro;
+}
+footer section .newsletter .formNLC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer section .newsletter .formNLC #mail {
+  margin: 1.875rem 0;
+  width: 440px;
+  height: 23px;
+  border: none;
+}
+
+.btn {
+  background-color: #660000;
+  color: white;
+  padding: 0.625rem 2.188rem;
+  border: none;
+  font-family: SourceSansFont;
+  font-size: 1.5rem;
+}
+
+.up img {
+  width: 50px;
+}
+
+.goTopCss {
+  position: fixed;
+  bottom: 6.25rem;
+  right: 0.938rem;
+  transform: rotate(-90deg);
+  border-radius: 8px;
+  transition: all 1s ease 0s;
+}
+.goTopCss:hover {
+  border-radius: 100%;
+}
+
+.noTopCss {
+  display: none;
+}
+
+@media screen and (min-width: 1920px) {
+  header #firstSection {
+    max-width: 1920px;
+  }
+  main #secondSection div {
+    max-width: 1920px;
+  }
+  main #thirdSection .img {
+    max-width: 1920px;
+  }
+  main #thirdSection .img #bubble1 {
+    left: 25%;
+  }
+  main #thirdSection .img #bubble3 {
+    right: 25%;
+  }
+  footer section {
+    max-width: 1920px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  header nav {
+    flex-direction: column;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav button {
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    right: 5%;
+    top: 7%;
+    border: none;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background: transparent;
+    transition: all 0.3s ease;
+  }
+  header nav button::before,
+  header nav button::after {
+    content: "";
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  header nav .open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  header nav .open ul {
+    display: block;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  header nav .active {
+    border: none;
+  }
+  header nav .active::before {
+    transform: rotateZ(45deg);
+    top: 0;
+  }
+  header nav .active::after {
+    transform: rotateZ(-45deg);
+    top: 0;
+  }
+  header nav .open ul {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  main #thirdSection .img #bubble3 {
+    right: 20%;
+    top: 26%;
+  }
+  footer section {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer section .newsletter {
+    max-width: 500px;
+    margin-top: 2rem;
+    margin: 3rem 0;
+  }
+  footer section .newsletter .formNLC #mail {
+    max-width: 440px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header section .content .lftContainer {
+    padding: 2rem;
+  }
+  main #thirdSection .img #bubble1 {
+    left: 25%;
+  }
+  footer section .newsletter .formNLC #mail {
+    width: 100%;
+  }
+  .goTopCss {
+    position: fixed;
+    bottom: 2%;
+    right: 46%;
+    transform: rotate(-90deg);
+  }
+}/*# sourceMappingURL=style.css.map */
